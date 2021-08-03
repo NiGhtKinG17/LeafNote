@@ -1,0 +1,17 @@
+<%- include('partials/header') %>
+<%- include('partials/navbar') %>
+
+<form class="noter" action="/compose" method="post">
+  <div class="form-group">
+    <h2 class="note-heading" >Title</h2>
+    <input type="text" class="form-control notearea" name="title" id="formGroupExampleInput" autocomplete="off">
+  </div>
+  <div class="form-group">
+    <h2 class="note-heading">Note</h2>
+    <textarea class="form-control notearea" name="content" id="exampleFormControlTextarea1" rows="15"></textarea>
+  </div>
+
+  <button type="submit" name="button" class="btn btn-lg btn-success add-button">Add</button>
+</form>
+
+<%- include('partials/footer') %>

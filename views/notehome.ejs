@@ -1,0 +1,14 @@
+<%- include('partials/header') %>
+<%- include('partials/navbar') %>
+<div class="notehome">
+  <h1 class="note-heading">My Notes</h1>
+  <div class="note-container">
+    <% foundUsers.forEach(function(post){ %>
+      <h3 class="note-title"><b> <%= post.title %> </b></h3>
+      <a href="/delete/<%= post._id %>" role="button" class="btn btn-sm btn-success deletebtn">Delete</a>
+      <p> <%= post.content.substring(0,100) %>...<a href="/fullnote/<%= post._id %>"> Read Full Note</a> </p>
+
+    <% }); %>
+  </div>
+</div>
+<%- include('partials/footer') %>

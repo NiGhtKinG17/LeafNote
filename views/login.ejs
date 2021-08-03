@@ -1,0 +1,28 @@
+<%- include('partials/header') %>
+
+<main class="form-signin text-center login">
+  <form  method="post" action="/login">
+    <h1 class="display-5 fw-bold leaf">Leaf🍃</h1>
+    <h1 class="h3 mb-3 fw-normal">Login</h1>
+
+    <div class="form-floating">
+      <input type="email" class="form-control" id="floatingInput" name="username" placeholder="name@example.com">
+      <label for="floatingInput">Email</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="Password">
+      <label for="floatingPassword">Password</label>
+    </div>
+
+    <button class="w-100 btn btn-lg btn-success" type="submit">Login</button>
+
+    <a class="btn btn-block btn-social btn-google" href="/auth/google" role="button">
+        <i class="fab fa-google"></i>
+          Log In with Google
+    </a>
+
+    <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
+  </form>
+</main>
+
+<%- include('partials/footer') %>
